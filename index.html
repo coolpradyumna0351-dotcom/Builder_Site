@@ -3,100 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shree Chaitanya Builder & Developer</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Shree Chaitanya Builder</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo">
-        <img src="logo-placeholder.png" alt="Shree Chaitanya Logo">
-      </div>
-      <div class="header-info">
-        <h1>Shree Chaitanya Builder & Developer</h1>
-        <p class="tagline">Create it by yourself</p>
-        <p class="contact">📞 +91-93376 41760 | ✉ *****@chaitanya.com</p>
-      </div>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Shree Chaitanya Builder</h1>
+      <p>Building Dreams, Creating Futures with Excellence</p>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </header>
 
-  <!-- Hero / Project -->
-  <section class="project-hero">
-    <div class="container">
-      <h2>Featured Project: {{PROJECT_NAME}}</h2>
-      <p class="location">{{PROJECT_LOCATION}}</p>
-      <div class="cta-buttons">
-        <a href="{{BROCHURE_LINK}}" target="_blank">Download Brochure</a>
-        <a href="tel:+919337641760">Call Now</a>
+  <!-- Navbar -->
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/service1.jpg" alt="Residential">
+        <h3>Residential Construction</h3>
+        <p>Modern, luxurious homes tailored to your lifestyle.</p>
+      </div>
+      <div class="card">
+        <img src="assets/service2.jpg" alt="Commercial">
+        <h3>Commercial Projects</h3>
+        <p>Smart business spaces designed for growth and success.</p>
+      </div>
+      <div class="card">
+        <img src="assets/service3.jpg" alt="Renovation">
+        <h3>Renovation & Interiors</h3>
+        <p>Transforming old spaces into modern architectural wonders.</p>
       </div>
     </div>
   </section>
 
-  <!-- Key Info Stats -->
-  <section class="key-info">
-    <div class="container">
-      <div class="info-box">
-        <strong>Project Size:</strong> {{PROJECT_SIZE}}
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Recent Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/project1.jpg" alt="Dream Villa">
+        <h3>Dream Villa</h3>
+        <p>A luxurious villa built with cutting-edge architecture.</p>
       </div>
-      <div class="info-box">
-        <strong>Launch Date:</strong> {{LAUNCH_DATE}}
+      <div class="card">
+        <img src="assets/project2.jpg" alt="City Office">
+        <h3>City Office Complex</h3>
+        <p>A business hub in the heart of the city.</p>
       </div>
-      <div class="info-box">
-        <strong>Possession Date:</strong> {{POSSESSION_DATE}}
-      </div>
-      <div class="info-box">
-        <strong>Total Units:</strong> {{TOTAL_UNITS}}
-      </div>
-      <div class="info-box">
-        <strong>Unit Config:</strong> {{UNIT_CONFIG}}
-      </div>
-    </div>
-  </section>
-
-  <!-- Amenities -->
-  <section class="amenities">
-    <div class="container">
-      <h2>Amenities</h2>
-      <ul>
-        <li>{{AMENITY_1}}</li>
-        <li>{{AMENITY_2}}</li>
-        <li>{{AMENITY_3}}</li>
-        <li>{{AMENITY_4}}</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="gallery">
-    <div class="container">
-      <h2>Photo Gallery</h2>
-      <div class="gallery-grid">
-        <img src="image1.jpg" alt="Project Image 1">
-        <img src="image2.jpg" alt="Project Image 2">
-        <img src="image3.jpg" alt="Project Image 3">
-        <img src="image4.jpg" alt="Project Image 4">
+      <div class="card">
+        <img src="assets/project3.jpg" alt="Green Homes">
+        <h3>Green Homes</h3>
+        <p>Eco-friendly homes designed with sustainability in mind.</p>
       </div>
     </div>
   </section>
 
-  <!-- About Project -->
-  <section class="about">
-    <div class="container">
-      <h2>About the Project</h2>
-      <p>{{PROJECT_DESCRIPTION}}</p>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>Email:</strong> ********@builders.com</p>
+      <p><strong>Phone:</strong> ‪+91-9937641760‬</p>
+      <a href="mailto:@builders.com" class="btn">Send Email</a>
+      <a href="tel:‪+919937641760‬" class="btn">Call Now</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>Shree Chaitanya Builder & Developer</p>
-      <p>📞 +91-93376 41760 | ✉ *****@chaitanya.com</p>
-      <p>Office: <a href="{{OFFICE_LINK}}" target="_blank">{{OFFICE_ADDRESS}}</a></p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Shree Chaitanya Builder. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
